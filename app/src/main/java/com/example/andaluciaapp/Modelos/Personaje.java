@@ -1,4 +1,4 @@
-package com.example.andaluciaapp;
+package com.example.andaluciaapp.Modelos;
 
 public class Personaje {
     private int imagenRes; // ID del recurso (R.drawable.nombre)

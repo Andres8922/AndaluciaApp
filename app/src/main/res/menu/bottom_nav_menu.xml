@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_personajes" android:title="Personajes" android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="@+id/nav_videos" android:title="Vídeos" android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="@+id/nav_sonidos" android:title="Sonidos" android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="@+id/nav_animaciones" android:title="Animar" android:icon="@drawable/ic_launcher_foreground"/>
+</menu>
