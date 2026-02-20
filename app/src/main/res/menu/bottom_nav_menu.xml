@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_personajes" android:title="Personajes" android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="@+id/nav_videos" android:title="Vídeos" android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="@+id/nav_sonidos" android:title="Sonidos" android:icon="@drawable/ic_launcher_foreground"/>
-    <item android:id="@+id/nav_animaciones" android:title="Animar" android:icon="@drawable/ic_launcher_foreground"/>
+    <item
+        android:id="@+id/nav_personajes"
+        android:icon="@drawable/ic_personaje"
+        android:title="Personajes"/>
+    <item
+        android:id="@+id/nav_videos"
+        android:icon="@drawable/ic_video"
+        android:title="Vídeos"/>
+    <item
+        android:id="@+id/nav_sonidos"
+        android:icon="@drawable/ic_musica"
+        android:title="Sonidos"/>
+    <item
+        android:id="@+id/nav_animaciones"
+        android:icon="@drawable/ic_animacion"
+        android:title="Animar"/>
 </menu>
