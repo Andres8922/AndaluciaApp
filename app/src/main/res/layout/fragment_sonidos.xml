@@ -1,27 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/fondo_claro"
     android:gravity="center"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonidos de Andalucía"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="110dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/imgCaratula"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/verde_claro"
+            android:src="@drawable/ic_musica"
+            app:tint="@color/white"
+            android:padding="60dp"/>
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/tvNombrePista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pista 1"
+        android:text="Nombre de la pista"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        android:layout_marginBottom="32dp"/>
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"/>
 
-    <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Sonidos con mucho arte"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
 
-        <Button android:id="@+id/btnAnterior" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anterior" />
-        <Button android:id="@+id/btnPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play" />
-        <Button android:id="@+id/btnPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pausa" />
-        <Button android:id="@+id/btnSiguiente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siguiente" />
+        <ImageButton
+            android:id="@+id/btnAnterior"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="@color/verde_oscuro" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:src="@android:drawable/ic_media_play"
+            app:backgroundTint="@color/verde_andalucia"
+            app:tint="@color/white"
+            app:elevation="6dp"
+            app:fabSize="normal" />
+
+        <ImageButton
+            android:id="@+id/btnSiguiente"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_next"
+            app:tint="@color/verde_oscuro" />
+
     </LinearLayout>
 </LinearLayout>
