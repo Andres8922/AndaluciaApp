@@ -26,10 +26,8 @@ public class SonidosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sonidos, container, false);
 
-        // Tus 4 audios en la carpeta res/raw
         listaCanciones = new int[]{R.raw.cancion1, R.raw.cancion2, R.raw.cancion3, R.raw.cancion4};
 
-        // Pon aquí los nombres reales de las canciones
         titulosCanciones = new String[]{"Sa matao Paco", "Pim Pam", "Un resplando", "Tu ere un porrero"};
 
         tvNombrePista = view.findViewById(R.id.tvNombrePista);
@@ -65,10 +63,8 @@ public class SonidosFragment extends Fragment {
         mediaPlayer = MediaPlayer.create(getContext(), listaCanciones[indiceCancionActual]);
         tvNombrePista.setText(titulosCanciones[indiceCancionActual]);
 
-        // Al cargar una canción nueva, el botón se pone en modo Play
         btnPlayPause.setImageResource(android.R.drawable.ic_media_play);
 
-        // NUEVA LÓGICA: Cuando termina la canción, vuelve al principio y se pone en Pausa
         mediaPlayer.setOnCompletionListener(mp -> {
             mediaPlayer.seekTo(0); // Vuelve al segundo 0
             btnPlayPause.setImageResource(android.R.drawable.ic_media_play); // Cambia el icono a Play

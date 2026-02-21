@@ -21,7 +21,6 @@ public class AnimacionesFragment extends Fragment {
         RecyclerView rv = v.findViewById(R.id.rvAnimaciones);
         rv.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Asegúrate de tener estos 5 archivos en res/raw
         LottieAdapter adapter = new LottieAdapter(
                 Arrays.asList("Toro", "Guitarra", "Olivas", "El Sol", "Feria"),
                 Arrays.asList(R.raw.bull, R.raw.guitarra, R.raw.olives, R.raw.sun, R.raw.feria)

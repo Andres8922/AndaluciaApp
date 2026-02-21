@@ -33,7 +33,6 @@ public class VideoFragment extends Fragment {
         return view;
     }
 
-    // Inicializamos los reproductores cuando la pantalla se hace visible
     @Override
     public void onStart() {
         super.onStart();
